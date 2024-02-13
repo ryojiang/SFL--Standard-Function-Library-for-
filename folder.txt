@@ -1,0 +1,24 @@
+\--patch141
+   +--MSC50
+   |  +--issue
+   |  +--makefile
+   |  |  +--compact
+   |  |  +--huge
+   |  |  +--large
+   |  |  +--medium
+   |  |  \--small
+   |  +--original
+   |  +--Patch
+   |  \--ReadMe.txt - Content folder description of MSC50
+   +--QC201
+   |  +--issue
+   |  +--makefile
+   |  +--original
+   |  +--patch
+   |  \--ReadMe.txt - Content folder description of QC201
+   \--TC201
+      +--issue
+      +--makefile
+      +--original
+      +--Patch
+      \--ReadMe.txt - Content folder description of QC201
