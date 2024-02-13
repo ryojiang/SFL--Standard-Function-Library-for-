@@ -1,0 +1,103 @@
+MAKE  Version 2.0   Copyright (c) 1987, 1988 Borland International
+
+Available memory 564603 bytes
+
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testcryp.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testcryp.c:
+Warning testcryp.c 25: Parameter 'the_signal' is never used in function handle_signal
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 255602
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB mktime.lib testdate.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testdate.c:
+Warning testdate.c 59: Parameter 'argv' is never used in function main
+Warning testdate.c 59: Parameter 'argc' is never used in function main
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 261596
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testdes.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testdes.c:
+Warning testdes.c 222: Parameter 'argv' is never used in function main
+Warning testdes.c 222: Parameter 'argc' is never used in function main
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 233374
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB mktime.lib testdir.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testdir.c:
+Warning testdir.c 26: Parameter 'the_signal' is never used in function handle_signal
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 263254
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB mktime.lib testexdr.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testexdr.c:
+Warning testexdr.c 72: Parameter 'argv' is never used in function main
+Warning testexdr.c 72: Parameter 'argc' is never used in function main
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 257360
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testfind.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testfind.c:
+Warning testfind.c 84: Parameter 'argv' is never used in function main
+Warning testfind.c 84: Parameter 'argc' is never used in function main
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 258224
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testit.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testit.c:
+Warning testit.c 9: Parameter 'argv' is never used in function main
+Warning testit.c 9: Parameter 'argc' is never used in function main
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 307874
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB mktime.lib testmime.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testmime.c:
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 260648
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB teststr.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+teststr.c:
+Warning teststr.c 37: Call to function 'str2descr' with no prototype in function main
+Warning teststr.c 37: Non-portable pointer assignment in function main
+Warning teststr.c 40: Call to function 'descr2str' with no prototype in function main
+Warning teststr.c 40: Non-portable pointer assignment in function main
+Warning teststr.c 47: Parameter 'argv' is never used in function main
+Warning teststr.c 47: Parameter 'argc' is never used in function main
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+Undefined symbol '_descr2str' in module teststr.c
+Undefined symbol '_str2descr' in module teststr.c
+
+	Available memory 261216
+
+** error 1 ** deleting teststr.exe
+
+Root cause ===> 2 function names are typo in teststr.c
+Solution ===> 
+1) modify line 36 and 37 : str2descr --> strt2descr
+2) modify line 40 : descr2str --> descr2strt
+
+From ---
+Line
+36    puts ("Testing str2descr():");
+37    descr     = str2descr (table);
+38    printf ("Descriptor size=%d\n", descr-> size);
+39
+40    new_table = descr2str (descr);
+41    printf ("Contents of table: ");
+
+To ---
+Line
+36    puts ("Testing strt2descr():");
+37    descr     = strt2descr (table);
+38    printf ("Descriptor size=%d\n", descr-> size);
+39
+40    new_table = descr2strt (descr);
+41    printf ("Contents of table: ");

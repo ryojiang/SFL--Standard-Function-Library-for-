@@ -1,0 +1,77 @@
+MAKE  Version 2.0   Copyright (c) 1987, 1988 Borland International
+
+Available memory 233374 bytes
+
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB mktime.lib testdir.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testdir.c:
+Warning testdir.c 26: Parameter 'the_signal' is never used in function handle_signal
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+
+	Available memory 263254
+
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB mktime.lib testexdr.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testexdr.c:
+Warning testexdr.c 72: Parameter 'argv' is never used in function main
+Warning testexdr.c 72: Parameter 'argc' is never used in function main
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+
+	Available memory 257360
+
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testfind.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testfind.c:
+Warning testfind.c 84: Parameter 'argv' is never used in function main
+Warning testfind.c 84: Parameter 'argc' is never used in function main
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+
+	Available memory 258224
+
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testit.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testit.c:
+Warning testit.c 9: Parameter 'argv' is never used in function main
+Warning testit.c 9: Parameter 'argc' is never used in function main
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+
+	Available memory 307874
+
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testmime.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testmime.c:
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+Undefined symbol '_mktime' in module SFLDATE
+
+
+	Available memory 260648
+
+
+** error 1 ** deleting testmime.exe
+
+Root cause ===> Turbo C 2.01 does not have mktime() in LIB and NOT defined headfile in <TIME.H>
+Solution ===> 
+1) Add mktime() definition into <TIME.H> line 42
+------------------------------------
+30 struct	tm	{
+31	int	tm_sec;
+32	int	tm_min;
+33	int	tm_hour;
+34	int	tm_mday;
+35	int	tm_mon;
+36	int	tm_year;
+37	int	tm_wday;
+38	int	tm_yday;
+39	int	tm_isdst;
+40 };
+41
+42 time_t _Cdecl mktime(struct tm *__timeptr);		/* Added mktime() by Jau-Bing Lin */
+------------------------------------
+2) copy mktime.c from https://opensource.apple.com/source/ntp/ntp-12/ntp/libntp/mktime.c
+3) compile mktime.c into object file. (each time change memory model, you need to recompile it)
+4) add mktime.obj to C command line  option when compile testdmime.c 
+

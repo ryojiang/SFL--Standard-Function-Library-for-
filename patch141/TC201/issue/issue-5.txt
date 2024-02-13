@@ -1,0 +1,33 @@
+MAKE  Version 2.0   Copyright (c) 1987, 1988 Borland International
+
+Available memory 564603 bytes
+
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testcryp.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testcryp.c:
+Warning testcryp.c 25: Parameter 'the_signal' is never used in function handle_signal
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+DGROUP : segment/group exceeds 64k
+
+	Available memory 255602
+
+** error 1 ** deleting testcryp.exe
+
+Root cause ===> 
+using Turbo C 2.01 memory small model to copiler will out of memory segment boundary
+SFLSRC14 and SFLSRC do not have C.BAT file.
+Check original SFLSRC20 C.BAT, C compiler option using -ml (Large model) 
+Solutions ===> 
+1) For consistency Unix and Windows OS, 
+then we should not use Turbo C 2.01 huge, compact, small, and tiny memory model to compile
+2) Below is solution can be used for huge, compact, small memory model, but not work on Tiny model
+ If without consistency, then need to modify 'testcryp.c' line 112 ~ 117 
+   - buffer size from 32000 to 16000 at line 112 and 117
+   - nb_block divided or multiple by 16 instead of 32 at line 114 and 116
+Line           
+112    while ((read_length = fread (read_buffer, 1, 16000, file)) != 0)
+113      {
+114        nb_block = (long)(read_length / 16);
+115        if (nb_block * 16 != (long)read_length)
+116            read_length = (size_t)(nb_block * 16);
+117        memcpy (test_buffer, read_buffer, 16000); 

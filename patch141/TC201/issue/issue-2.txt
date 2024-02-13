@@ -1,0 +1,10 @@
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sfldate.c mktime.obj
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sfldate.c:
+Warning sfldate.c 368: Call to function 'mktime' with no prototype in function date_to_timer
+
+Root cause ===> mktime() has NOT beed defined in Turbo C 2.01 headfile <TIME.H> 
+Solution ===> 
+1) copy mktime.c from https://opensource.apple.com/source/ntp/ntp-12/ntp/libntp/mktime.c
+2) add mktime definition into <time.h>, and compile mktime.c into object file.
+3) add mktime.obj and sfldate.obj to command line when compile testdate.c 

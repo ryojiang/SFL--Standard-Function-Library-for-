@@ -1,0 +1,258 @@
+MAKE  Version 2.0   Copyright (c) 1987, 1988 Borland International
+
+Available memory 564634 bytes
+
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflbits.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflbits.c:
+Warning sflbits.c 245: Parameter 'bits' is never used in function locate_bit
+Warning sflbits.c 315: 'expand_size' is assigned a value which is never used in function get_section
+
+	Available memory 291212
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcgi.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcgi.c:
+
+	Available memory 290846
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcomp.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcomp.c:
+
+	Available memory 287762
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflconv.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflconv.c:
+
+	Available memory 300930
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcryp.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcryp.c:
+
+	Available memory 234492
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcvbs.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcvbs.c:
+
+	Available memory 300400
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcvdp.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcvdp.c:
+
+	Available memory 278298
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcvds.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcvds.c:
+
+	Available memory 292874
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcvns.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcvns.c:
+
+	Available memory 284696
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcvsb.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcvsb.c:
+
+	Available memory 302222
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcvsd.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcvsd.c:
+
+	Available memory 273846
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcvsn.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcvsn.c:
+
+	Available memory 291326
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcvst.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcvst.c:
+
+	Available memory 288396
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcvtp.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcvtp.c:
+
+	Available memory 285738
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflcvts.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflcvts.c:
+
+	Available memory 297058
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sfldate.c mktime.obj
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sfldate.c:
+Warning sfldate.c 368: Call to function 'mktime' with no prototype in function date_to_timer
+
+	Available memory 294158
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sfldir.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sfldir.c:
+Warning sfldir.c 269: Parameter 'dir' is never used in function close_dir
+
+	Available memory 276772
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflenv.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflenv.c:
+
+	Available memory 294848
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflexdr.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflexdr.c:
+Warning sflexdr.c 363: 'used_size' is assigned a value which is never used in function exdr_writed
+
+	Available memory 293420
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflfile.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflfile.c:
+
+	Available memory 283676
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflfind.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflfind.c:
+
+	Available memory 305430
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflini.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflini.c:
+
+	Available memory 297068
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflmath.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflmath.c:
+
+	Available memory 295360
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflmem.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflmem.c:
+
+	Available memory 298800
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflmesg.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflmesg.c:
+
+	Available memory 295704
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflmime.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflmime.c:
+Warning sflmime.c 276: Possibly incorrect assignment in function decode_mime_time
+
+	Available memory 290748
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflnode.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflnode.c:
+
+	Available memory 302714
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflproc.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflproc.c:
+Warning sflproc.c 312: Parameter 'wait' is never used in function process_create
+Warning sflproc.c 312: Parameter 'envv' is never used in function process_create
+Warning sflproc.c 312: Parameter 'std_err' is never used in function process_create
+Warning sflproc.c 312: Parameter 'std_out' is never used in function process_create
+Warning sflproc.c 312: Parameter 'std_in' is never used in function process_create
+Warning sflproc.c 312: Parameter 'workdir' is never used in function process_create
+Warning sflproc.c 312: Parameter 'argv' is never used in function process_create
+Warning sflproc.c 312: Parameter 'filename' is never used in function process_create
+Warning sflproc.c 325: Parameter 'sigvalue' is never used in function new_handler
+Warning sflproc.c 386: Parameter 'read_only' is never used in function redirect_io
+Warning sflproc.c 386: Parameter 'err_pipe' is never used in function redirect_io
+Warning sflproc.c 386: Parameter 'fileno' is never used in function redirect_io
+Warning sflproc.c 456: Parameter 'process_id' is never used in function process_status
+Warning sflproc.c 485: Parameter 'process_id' is never used in function process_kill
+Warning sflproc.c 517: Parameter 'process' is never used in function process_close
+Warning sflproc.c 615: Parameter 'lockfile' is never used in function process_server
+Warning sflproc.c 615: Parameter 'workdir' is never used in function process_server
+Warning sflproc.c 615: 'redirect_io' declared but never used
+Warning sflproc.c 615: 'new_handler' declared but never used
+
+	Available memory 297678
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflslot.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflslot.c:
+
+	Available memory 300496
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflsock.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflsock.c:
+Warning sflsock.c 239: Parameter 'queue_length' is never used in function passive_socket
+Warning sflsock.c 239: Parameter 'protocol' is never used in function passive_socket
+Warning sflsock.c 239: Parameter 'service' is never used in function passive_socket
+Warning sflsock.c 302: Parameter 'protocol' is never used in function create_socket
+Warning sflsock.c 575: Parameter 'retry_delay' is never used in function connect_socket
+Warning sflsock.c 575: Parameter 'retry_max' is never used in function connect_socket
+Warning sflsock.c 575: Parameter 'host_addr' is never used in function connect_socket
+Warning sflsock.c 575: Parameter 'protocol' is never used in function connect_socket
+Warning sflsock.c 575: Parameter 'service' is never used in function connect_socket
+Warning sflsock.c 575: Parameter 'host' is never used in function connect_socket
+Warning sflsock.c 609: Parameter 'sin' is never used in function connect_to_peer
+Warning sflsock.c 609: Parameter 'handle' is never used in function connect_to_peer
+Warning sflsock.c 677: Parameter 'sin' is never used in function address_end_point
+Warning sflsock.c 677: Parameter 'protocol' is never used in function address_end_point
+Warning sflsock.c 677: Parameter 'service' is never used in function address_end_point
+Warning sflsock.c 677: Parameter 'host' is never used in function address_end_point
+Warning sflsock.c 723: Parameter 'handle' is never used in function socket_hostaddr
+Warning sflsock.c 770: Parameter 'master_socket' is never used in function accept_socket
+Warning sflsock.c 838: Parameter 'namesize' is never used in function get_peer_addr
+Warning sflsock.c 838: Parameter 'name' is never used in function get_peer_addr
+Warning sflsock.c 838: Parameter 'sin' is never used in function get_peer_addr
+Warning sflsock.c 838: Parameter 'handle' is never used in function get_peer_addr
+Warning sflsock.c 876: Parameter 'length' is never used in function read_TCP
+Warning sflsock.c 876: Parameter 'buffer' is never used in function read_TCP
+Warning sflsock.c 876: Parameter 'handle' is never used in function read_TCP
+Warning sflsock.c 942: Parameter 'length' is never used in function write_TCP
+Warning sflsock.c 942: Parameter 'buffer' is never used in function write_TCP
+Warning sflsock.c 942: Parameter 'handle' is never used in function write_TCP
+Warning sflsock.c 1002: Parameter 'sin' is never used in function read_UDP
+Warning sflsock.c 1002: Parameter 'length' is never used in function read_UDP
+Warning sflsock.c 1002: Parameter 'buffer' is never used in function read_UDP
+Warning sflsock.c 1002: Parameter 'handle' is never used in function read_UDP
+Warning sflsock.c 1059: Parameter 'sin' is never used in function write_UDP
+Warning sflsock.c 1059: Parameter 'length' is never used in function write_UDP
+Warning sflsock.c 1059: Parameter 'buffer' is never used in function write_UDP
+Warning sflsock.c 1059: Parameter 'handle' is never used in function write_UDP
+Warning sflsock.c 1098: Parameter 'handle' is never used in function close_socket
+Warning sflsock.c 1225: Parameter 'handle' is never used in function socket_is_alive
+Warning sflsock.c 1247: Parameter 'handle' is never used in function socket_error
+
+	Available memory 297120
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflstr.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflstr.c:
+
+	Available memory 290550
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflsymb.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflsymb.c:
+
+	Available memory 287106
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sfltok.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sfltok.c:
+
+	Available memory 299336
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sfltron.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sfltron.c:
+
+	Available memory 300708
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sfluid.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sfluid.c:
+
+	Available memory 303362
+	del LIBSFL.LIB
+     0 files deleted
+	\tc\bin\tlib LIBSFL.LIB
+	\tc\bin\tlib LIBSFL.LIB -+sflbits.obj -+sflcgi.obj -+sflcomp.obj -+sflconv.obj -+sflcryp.obj
+	\tc\bin\tlib LIBSFL.LIB -+sflcvbs.obj -+sflcvdp.obj -+sflcvds.obj -+sflcvns.obj -+sflcvsb.obj
+	\tc\bin\tlib LIBSFL.LIB -+sflcvsd.obj -+sflcvsn.obj -+sflcvst.obj -+sflcvtp.obj -+sflcvts.obj
+	\tc\bin\tlib LIBSFL.LIB -+sfldate.obj -+sfldir.obj -+sflenv.obj -+sflexdr.obj -+sflfile.obj
+	\tc\bin\tlib LIBSFL.LIB -+sflfind.obj -+sflini.obj -+sflmath.obj -+sflmem.obj -+sflmesg.obj
+	\tc\bin\tlib LIBSFL.LIB -+sflmime.obj -+sflnode.obj -+sflproc.obj -+sflslot.obj -+sflsock.obj
+	\tc\bin\tlib LIBSFL.LIB -+sflstr.obj -+sflsymb.obj -+sfltok.obj -+sfltron.obj -+sfluid.obj
+	del SFLTC-ms.LIB
+     0 files deleted
+	copy LIBSFL.LIB SFLTC-ms.LIB
+E:\sflsrc14\LIBSFL.LIB => E:\sflsrc14\SFLTC-ms.LIB
+     1 file copied

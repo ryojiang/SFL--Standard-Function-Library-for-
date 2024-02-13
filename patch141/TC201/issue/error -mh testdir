@@ -1,0 +1,230 @@
+-r--------   1 user     group       64008 Mar 15 15:29 4DOSSWAP.001
+-rw-------   1 user     group        1734 Mar  1  1998 ADDLIB
+-rw-------   1 user     group        7610 Mar 18  1998 ANCHOR.DEF
+-rw-------   1 user     group       10039 Feb 27  1998 BUILD
+-rw-------   1 user     group       11357 Feb 27  1998 BUILD.BAT
+-rw-------   1 user     group       15763 Feb 27  1998 BUILD.TXT
+-rw-------   1 user     group        2391 Feb 27  1998 BUILDH
+-rw-------   1 user     group        2369 Feb 27  1998 BUILDH.BAT
+-rw-------   1 user     group        2380 Feb 27  1998 BUILDH.TXT
+-rw-------   1 user     group        5510 Feb 23  1998 BUILDSFL.TXT
+-rw-------   1 user     group        6263 Mar  6  1998 C
+-rw-------   1 user     group         236 Mar  5 04:00 C.BAT
+-rw-------   1 user     group        6329 Sep  7 22:32 CHANGES.TXT
+-rw-------   1 user     group          30 Mar  9 22:12 CLEAN.MAK
+-rw-------   1 user     group          88 Mar  9 22:38 CLOBBER.MAK
+-rw-------   1 user     group          40 Mar  9 22:11 DELTEST.MAK
+-rw-------   1 user     group           0 Feb 26 14:53 ERROR
+-rw-------   1 user     group         455 Mar 14 22:57 ERROR-~1
+dr-x------   1 user     group           0 Mar 15 19:50 FILE4M~1/
+dr-x------   1 user     group           0 Mar 15 00:53 FILE4QC2/
+dr-x------   1 user     group           0 Mar 15 22:55 FILE4TC2/
+-rw-------   1 user     group        1550 Nov  2  1999 FILETYPE.DEF
+-rw-------   1 user     group        1949 Mar 11 23:17 HEADFILE.MAK
+-rw-------   1 user     group        4616 Mar 11 23:20 LIBRARY.MAK
+-rw-------   1 user     group      140800 Feb 26 14:37 LIBSFL.BAK
+-rw-------   1 user     group      156160 Feb 26 14:37 LIBSFL.LIB
+-rw-------   1 user     group        3572 Feb 25  1998 LICENSE.TXT
+-rw-------   1 user     group        8153 Mar  9 20:37 MAKEFILE
+-rw-------   1 user     group        8304 Mar  1 02:26 MKTIME.C
+-rw-------   1 user     group         112 Mar 14 23:32 MKTIME~1.ERR
+-rw-------   1 user     group        1520 Feb 26 14:37 MKTIME.LIB
+-rw-------   1 user     group        1520 Feb 26 14:37 MKTIME.OBJ
+-rw-------   1 user     group        6797 Mar 11 23:22 MSC40-AS.MAK
+-rw-------   1 user     group        6793 Mar 12 21:34 MSC50-AS.MAK
+-rw-------   1 user     group        8153 Mar  9 20:37 MSC50-~1.MAK
+-rw-------   1 user     group        8276 Mar  9 20:34 MSC50-~2.MAK
+-rw-------   1 user     group        8153 Mar  9 21:54 MSC50-~3.MAK
+-rw-------   1 user     group        6917 Mar  9 23:05 MSC50-~4.MAK
+-rw-------   1 user     group        7013 Mar 11 03:46 MS0B25~1.MAK
+-rw-------   1 user     group        8320 Mar 15 16:00 MSC50.MAK
+-rw-------   1 user     group        8310 Mar 15 19:38 MSC51.MAK
+-rw-------   1 user     group        8506 Mar 15 20:40 MSC6.MAK
+-rw-------   1 user     group        1290 Mar 15 15:45 MSC60_~1.CER
+-rw-------   1 user     group        6258 Mar 15 17:10 NMAKEV~1.0_Q
+-rw-------   1 user     group        2309 Mar 15 20:26 NMAKEV~1.TXT
+-rw-------   1 user     group         731 Mar 15 20:31 NMAKEV~2.TXT
+-rw-------   1 user     group         820 Mar 15 20:33 NMAKEV~3.TXT
+dr-x------   1 user     group           0 Mar 12 00:32 PATCH4~2/
+-rw-------   1 user     group        2314 Feb 25  1998 PRELUDE.DEF
+-rw-------   1 user     group       19928 Mar 11 20:07 PRELUDE.H
+-rw-------   1 user     group         131 Mar 15 17:07 QC10_L~1
+-rw-------   1 user     group        8315 Mar 15 17:59 QC101.MAK
+-rw-------   1 user     group        8295 Mar 15 04:21 QC201-AS.MAK
+-rw-------   1 user     group        8223 Mar 12 19:43 QC201-~2.MAK
+-rw-------   1 user     group        8226 Mar 12 21:23 QC201-~1.MAK
+-rw-------   1 user     group        1186 Mar  3 03:28 SETTC201.BAT
+-rw-------   1 user     group      109806 Feb 26 14:37 SFL.H
+-rw-------   1 user     group       19939 Feb 24  1998 SFLBITS.C
+-rw-------   1 user     group        3447 Nov  9  1998 SFLBITS.H
+-rw-------   1 user     group       23194 Feb 26 14:37 SFLBITS.OBJ
+-rw-------   1 user     group        3725 Feb 24  1998 SFLCGI.C
+-rw-------   1 user     group        1163 Feb 21  1998 SFLCGI.H
+-rw-------   1 user     group        1742 Feb 26 14:37 SFLCGI.OBJ
+-rw-------   1 user     group       33865 Feb 24  1998 SFLCOMP.C
+-rw-------   1 user     group        2229 Nov  5  1998 SFLCOMP.H
+-rw-------   1 user     group       13888 Feb 26 14:37 SFLCOMP.OBJ
+-rw-------   1 user     group        2162 Feb 24  1998 SFLCONV.C
+-rw-------   1 user     group        8097 Mar 19  1998 SFLCONV.H
+-rw-------   1 user     group        1583 Feb 26 14:37 SFLCONV.OBJ
+-rw-------   1 user     group       58143 Sep  7 21:36 SFLCRYP.C
+-rw-------   1 user     group        4395 Feb 21  1998 SFLCRYP.H
+-rw-------   1 user     group       25192 Feb 26 14:37 SFLCRYP.OBJ
+-rw-------   1 user     group        1697 Feb 24  1998 SFLCVBS.C
+-rw-------   1 user     group        1043 Feb 26 14:37 SFLCVBS.OBJ
+-rw-------   1 user     group       10384 Feb 24  1998 SFLCVDP.C
+-rw-------   1 user     group        3013 Feb 26 14:37 SFLCVDP.OBJ
+-rw-------   1 user     group        5795 Mar 20  1998 SFLCVDS.C
+-rw-------   1 user     group        1881 Feb 26 14:37 SFLCVDS.OBJ
+-rw-------   1 user     group       12146 Feb 24  1998 SFLCVNS.C
+-rw-------   1 user     group        2090 Feb 26 14:37 SFLCVNS.OBJ
+-rw-------   1 user     group        1751 Feb 24  1998 SFLCVSB.C
+-rw-------   1 user     group         977 Feb 26 14:37 SFLCVSB.OBJ
+-rw-------   1 user     group       12969 Mar 11 14:51 SFLCVSD.C
+-rw-------   1 user     group        2697 Feb 26 14:37 SFLCVSD.OBJ
+-rw-------   1 user     group       10735 Sep  7 21:27 SFLCVSN.C
+-rw-------   1 user     group        1815 Feb 26 14:37 SFLCVSN.OBJ
+-rw-------   1 user     group        8269 Feb 24  1998 SFLCVST.C
+-rw-------   1 user     group        3988 Nov  6  1999 SFLCVST.D
+-rw-------   1 user     group        2579 Nov  6  1999 SFLCVST.I
+-rw-------   1 user     group        2814 Nov  5  1998 SFLCVST.L
+-rw-------   1 user     group        3294 Feb 26 14:37 SFLCVST.OBJ
+-rw-------   1 user     group        7559 Feb 24  1998 SFLCVTP.C
+-rw-------   1 user     group        2132 Feb 26 14:37 SFLCVTP.OBJ
+-rw-------   1 user     group        4499 Feb 24  1998 SFLCVTS.C
+-rw-------   1 user     group        1364 Feb 26 14:37 SFLCVTS.OBJ
+-rw-------   1 user     group       13024 Mar 14 23:39 SFLDAT~2.TXT
+-rw-------   1 user     group       18996 Feb 24  1998 SFLDATE.C
+-rw-------   1 user     group         113 Mar 14 23:26 SFLDAT~1.ERR
+-rw-------   1 user     group       13024 Mar  6 21:57 SFLDAT~1.TXT
+-rw-------   1 user     group        4283 Mar 19  1998 SFLDATE.H
+-rw-------   1 user     group        5804 Feb 26 14:37 SFLDATE.OBJ
+-rw-------   1 user     group       28610 Sep  7 21:49 SFLDIR.C
+-rw-------   1 user     group        8230 Sep  7 21:24 SFLDIR.H
+-rw-------   1 user     group        7727 Feb 26 14:37 SFLDIR.OBJ
+-rw-------   1 user     group        2714 Mar 12  1998 SFLDOC.TXT
+-rw-------   1 user     group       30414 Mar 19  1998 SFLDOC1.TXT
+-rw-------   1 user     group         330 Feb 27  1998 SFLDOC2.TXT
+-rw-------   1 user     group        6120 Feb 24  1998 SFLENV.C
+-rw-------   1 user     group        1667 Mar 15  1998 SFLENV.H
+-rw-------   1 user     group        1797 Feb 26 14:37 SFLENV.OBJ
+-rw-------   1 user     group       17073 Feb 24  1998 SFLEXDR.C
+-rw-------   1 user     group        1687 Mar 14  1998 SFLEXDR.H
+-rw-------   1 user     group        2713 Feb 26 14:37 SFLEXDR.OBJ
+-rw-------   1 user     group       27942 Mar 11 14:56 SFLFILE.C
+-rw-------   1 user     group        4190 Mar  2  1998 SFLFILE.H
+-rw-------   1 user     group        7512 Feb 26 14:37 SFLFILE.OBJ
+-rw-------   1 user     group        5996 Feb 24  1998 SFLFIND.C
+-rw-------   1 user     group        1857 Nov  5  1998 SFLFIND.H
+-rw-------   1 user     group        1661 Feb 26 14:37 SFLFIND.OBJ
+-rw-------   1 user     group        5558 Feb 24  1998 SFLINI.C
+-rw-------   1 user     group        1305 Nov  5  1998 SFLINI.H
+-rw-------   1 user     group        2609 Feb 26 14:37 SFLINI.OBJ
+-rw-------   1 user     group        4824 Feb 24  1998 SFLMATH.C
+-rw-------   1 user     group        1516 Feb 21  1998 SFLMATH.H
+-rw-------   1 user     group        2717 Feb 26 14:37 SFLMATH.OBJ
+-rw-------   1 user     group       70959 Mar 15 16:11 SFLMC5AS.LIB
+-rw-------   1 user     group       15824 Feb 24  1998 SFLMEM.C
+-rw-------   1 user     group        3145 Nov 20  1998 SFLMEM.H
+-rw-------   1 user     group        3018 Feb 26 14:37 SFLMEM.OBJ
+-rw-------   1 user     group        6489 Feb 24  1998 SFLMESG.C
+-rw-------   1 user     group        1746 Nov  5  1998 SFLMESG.H
+-rw-------   1 user     group        2669 Feb 26 14:37 SFLMESG.OBJ
+-rw-------   1 user     group       12934 Mar 10  1998 SFLMIME.C
+-rw-------   1 user     group        7902 Feb 21  1998 SFLMIME.H
+-rw-------   1 user     group        3971 Feb 26 14:37 SFLMIME.OBJ
+-rw-------   1 user     group       55545 Mar 15 20:41 SFLMSCAS.LIB
+-rw-------   1 user     group        5799 Feb 24  1998 SFLNODE.C
+-rw-------   1 user     group        2771 Feb 25  1998 SFLNODE.H
+-rw-------   1 user     group        1560 Feb 26 14:37 SFLNODE.OBJ
+-rw-------   1 user     group       26391 Sep  7 22:29 SFLPROC.C
+-rw-------   1 user     group        3146 Sep  7 21:56 SFLPROC.H
+-rw-------   1 user     group        1183 Feb 26 14:37 SFLPROC.OBJ
+-rw-------   1 user     group       92975 Mar 15 04:20 SFLQC-AS.LIB
+-rw-------   1 user     group      102703 Mar 15 17:59 SFLQC1AS.LIB
+-rw-------   1 user     group        8528 Feb 24  1998 SFLSLOT.C
+-rw-------   1 user     group        2490 Mar 19  1998 SFLSLOT.H
+-rw-------   1 user     group        1891 Feb 26 14:37 SFLSLOT.OBJ
+-rw-------   1 user     group       50785 Sep  7 21:31 SFLSOCK.C
+-rw-------   1 user     group       11448 Mar 10  1998 SFLSOCK.H
+-rw-------   1 user     group        2712 Feb 26 14:37 SFLSOCK.OBJ
+-rw-------   1 user     group       26035 Feb 24  1998 SFLSTR.C
+-rw-------   1 user     group        2359 Mar 17  1998 SFLSTR.H
+-rw-------   1 user     group        4946 Feb 26 14:37 SFLSTR.OBJ
+-rw-------   1 user     group       23311 Feb 24  1998 SFLSYMB.C
+-rw-------   1 user     group        4982 Mar 15  1998 SFLSYMB.H
+-rw-------   1 user     group        4207 Feb 26 14:37 SFLSYMB.OBJ
+-rw-------   1 user     group      156160 Feb 26 14:37 SFLTC-MH.LIB
+-rw-------   1 user     group      119808 Feb 26 14:35 SFLTC-ML.LIB
+-rw-------   1 user     group      111104 Feb 26 14:11 SFLTC-MM.LIB
+-rw-------   1 user     group      109056 Feb 26 13:39 SFLTC-MT.LIB
+-rw-------   1 user     group        5034 Feb 24  1998 SFLTOK.C
+-rw-------   1 user     group        1195 Feb 27  1998 SFLTOK.H
+-rw-------   1 user     group        1445 Feb 26 14:37 SFLTOK.OBJ
+-rw-------   1 user     group        5595 Mar 19  1998 SFLTRON.C
+-rw-------   1 user     group        1797 Apr 23  19110 SFLTRON.H
+-rw-------   1 user     group        2043  SFLTRON.OBJ
+-rw-------   1 user     group       11959 z  7 21:55 SFLUID.C
+-rw-------   1 user     group        1843 z  7 21:51 SFLUID.H
+-rw-------   1 user     group        1119 • 26 14:37 SFLUID.OBJ
+-rw-------   1 user     group        1003  SFLVERS.H
+-rw-------   1 user     group        8450  TC201-MC.MAK
+-rw-------   1 user     group        8450  TC201-MH.MAK
+-rw-------   1 user     group        8450  TC201-ML.MAK
+-rw-------   1 user     group        8450  TC201-MM.MAK
+-rw-------   1 user     group        8450  TC201-MS.MAK
+-rw-------   1 user     group        8440 • 26 14:03 TC201-MT.MAK
+-rw-------   1 user     group       12929  TCBUILD.BAT
+-rw-------   1 user     group        8616  TCPP1-MS.MAK
+-rw-------   1 user     group       12960  TCPP10~1
+-rw-------   1 user     group        1662  TESTBITS.C
+-rw-------   1 user     group       51466 • 26 14:38 TESTBITS.EXE
+-rw-------   1 user     group        1404 • 26 14:38 TESTBITS.OBJ
+-rw-------   1 user     group        2922 • 21  1998 TESTCGI.C
+-rw-------   1 user     group       23790 • 26 14:38 TESTCGI.EXE
+-rw-------   1 user     group        1889 • 26 14:38 TESTCGI.OBJ
+-rw-------   1 user     group        4743  TESTCOMP.C
+-rw-------   1 user     group       46461 • 26 14:38 TESTCOMP.EXE
+-rw-------   1 user     group       19082 • 26 14:38 TESTCOMP.OBJ
+-rw-------   1 user     group       23152   7 21:35 TESTCONV.C
+-rw-------   1 user     group       19814  TESTCONV.DAT
+-rw-------   1 user     group       57371 • 26 14:38 TESTCONV.EXE
+-rw-------   1 user     group       11786 • 26 14:38 TESTCONV.OBJ
+-rw-------   1 user     group        4853 • 26 13:28 TESTCRYP.C
+-rw-------   1 user     group       83798 • 26 14:38 TESTCRYP.EXE
+-rw-------   1 user     group       35304 • 26 14:38 TESTCRYP.OBJ
+-rw-------   1 user     group        1979  TESTDATE.C
+-rw-------   1 user     group       18743 • 26 14:38 TESTDATE.EXE
+-rw-------   1 user     group        1828 • 26 14:38 TESTDATE.OBJ
+-rw-------   1 user     group       13788 • 21  1998 TESTDES.C
+-rw-------   1 user     group       41919 • 26 14:38 TESTDES.EXE
+-rw-------   1 user     group       14399 • 26 14:38 TESTDES.OBJ
+-rw-------   1 user     group        1857  TESTDIR.C
+-rw-------   1 user     group       33681 • 26 14:38 TESTDIR.EXE
+-rw-------   1 user     group        1233 • 26 14:38 TESTDIR.OBJ
+-rw-------   1 user     group        3066  TESTEXDR.C
+-rw-------   1 user     group       20037  TESTEXDR.EXE
+-rw-------   1 user     group        4344  TESTEXDR.OBJ
+-rw-------   1 user     group        1498 } TESTFILE.MAK
+-rw-------   1 user     group        3105 b TESTFIND.C
+-rw-------   1 user     group       22479  TESTFIND.EXE
+-rw-------   1 user     group       11936  TESTFIND.OBJ
+-rw-------   1 user     group         171 b TESTIT.C
+-rw-------   1 user     group        5469  TESTIT.EXE
+-rw-------   1 user     group         909  TESTIT.OBJ
+-rw-------   1 user     group        2478 b TESTMIME.C
+-rw-------   1 user     group       42183  TESTMIME.EXE
+-rw-------   1 user     group        1459  TESTMIME.OBJ
+-rw-------   1 user     group        2150 } TESTSTR.C
+-rw-------   1 user     group       15831  TESTSTR.EXE
+-rw-------   1 user     group        1519  TESTSTR.OBJ
+-rw-------   1 user     group        1211 b TESTSYM.C
+-rw-------   1 user     group       18877  TESTSYM.EXE
+-rw-------   1 user     group        1133  TESTSYM.OBJ
+-rw-------   1 user     group        1252 b TESTUID.C
+-rw-------   1 user     group        3396  TESTUID.EXE
+-rw-------   1 user     group         827  TESTUID.OBJ
+
+
+===============
+Turbo c 2.01 with huge memory model to compiler SFL 1.4 testdir.c cause this issue

@@ -1,0 +1,43 @@
+MAKE  Version 2.0   Copyright (c) 1987, 1988 Borland International
+
+Available memory 564603 bytes
+
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testbits.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testbits.c:
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 261530
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testcgi.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testcgi.c:
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 259676
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testcomp.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testcomp.c:
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 257974
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB mktime.lib testconv.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testconv.c:
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+
+	Available memory 236424
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include -L\tc\lib LIBSFL.LIB testcryp.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testcryp.c:
+Warning testcryp.c 25: Parameter 'the_signal' is never used in function handle_signal
+Error testcryp.c 64: Undefined symbol 'CLOCKS_PER_SEC' in function main
+*** 1 errors in Compile ***
+
+	Available memory 260424
+
+** error 1 ** deleting testcryp.exe
+
+Root cause ===> Turbo C 2.01 headfile <TIME.H> lacks of  'CLOCKS_PER_SEC' definition
+Solution ===> 
+Check Turbo C++ 3.0 <TIME.H>, and add below definition to <TIME.H> line 25
+#define CLOCKS_PER_SEC 18.2

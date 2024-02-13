@@ -1,0 +1,76 @@
+MAKE  Version 2.0   Copyright (c) 1987, 1988 Borland International
+
+Available memory 564634 bytes
+
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include mktime.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+mktime.c:
+
+	Available memory 356098
+	copy mktime.obj mktime.lib
+E:\sflsrc14\mktime.obj => E:\sflsrc14\mktime.lib
+     1 file copied
+	buildh
+Building sfl.h header file...
+Deleting E:\sflsrc14\sfl.h
+     1 file deleted         110,592 bytes freed
+	\tc\bin\tcc -c -f -O -Z -w -C -ms -I\tc\include sflbits.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+sflbits.c:
+Error prelude.h 218: Unable to open include file 'malloc.h'
+Warning sflbits.c 245: Parameter 'bits' is never used in function locate_bit
+Warning sflbits.c 315: 'expand_size' is assigned a value which is never used in function get_section
+*** 1 errors in Compile ***
+
+	Available memory 297738
+
+** error 1 ** deleting sflbits.obj
+
+===> 
+Root cause : 
+Turbo C 2.01 memory management functions and variables is place
+in alloc.h, and MSC5.0 and Quick2.01 is placed in mallc.h; however, prelude.h file
+in /*- System-specific include files ---*/ section conditional definition for (__TURBOC__)
+missing include <alloc.h>
+Solution:
+There are 2 solutions. You can take one of them.
+1) In Turbo C 2.01 \INCLUDE directory, copy alloc.h to malloc.h
+2) Modify prelude.h
+
+From ----
+/*- System-specific include files -------------------------------------------*/
+
+#if (defined (__MSDOS__))
+#   if (defined (__WINDOWS__))          /*  When __WINDOWS__ is defined,     */
+#       include <windows.h>             /*    so is __MSDOS__                */
+#       include <winsock.h>             /*  May cause trouble on VC 1.x      */
+#   endif
+#   if (defined (__TURBOC__))
+#       include <dir.h>
+#   endif
+#   include <dos.h>
+#   include <io.h>
+#   include <fcntl.h>
+#   include <malloc.h>
+#   include <sys\types.h>
+#   include <sys\stat.h>
+#endif
+
+To ----
+#if (defined (__MSDOS__))
+#   if (defined (__WINDOWS__))          /*  When __WINDOWS__ is defined,     */
+#       include <windows.h>             /*    so is __MSDOS__                */
+#       include <winsock.h>             /*  May cause trouble on VC 1.x      */
+#   endif
+#   if (defined (__TURBOC__))
+#       include <dir.h>
+#       include <alloc.h>               /*  For Turbo C 2.01                 */
+#   else                          /*  Modified by Jau-Bing Lin on 2022/10/03 */
+#       include <malloc.h>              /*  For QuickC 2.01 or MSC 5.0       */
+#   endif
+#   include <dos.h>
+#   include <io.h>
+#   include <fcntl.h>
+#   include <sys\types.h>
+#   include <sys\stat.h>
+#endif

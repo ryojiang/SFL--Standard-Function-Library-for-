@@ -1,0 +1,27 @@
+MAKE  Version 2.0   Copyright (c) 1987, 1988 Borland International
+
+Available memory 564621 bytes
+
+	\tc\bin\tcc -f -O -Z -w -C -ms -I\tc\include LIBSFL.LIB testbits.c
+Turbo C  Version 2.01  Copyright (c) 1987, 1988 Borland International
+testbits.c:
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+c0s.obj : unable to open file
+
+	Available memory 261558
+
+** error 1 ** deleting testbits.exe
+
+Root cause ===> because has not well defined libraray directory both in TURBOC.CFG and makefile
+2 Solutions (take only one action below) ===>
+1) Modify makefile to let each c compile command options have -Llibrary-directory 
+2) Modify TC\BIN\TURBOC.CFG, to put actual drive:\directory_of_library, for example
+if my Turbo C 2.01 library is E:\TC\LIB
+
+Modify TURBOC.CFG
+From ----
+-IC:\TC\INCLUDE
+-LC:\TC\LIB
+To ----
+-IE:\TC\INCLUDE
+-LE:\TC\LIB
