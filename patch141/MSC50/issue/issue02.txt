@@ -1,0 +1,60 @@
+
+Microsoft (R) Program Maintenance Utility  Version 4.06
+Copyright (C) Microsoft Corp 1984-1987.  All rights reserved.
+
+
+  \msc50\bin\cl /c /AS sflcvsd.c
+sflcvsd.c
+sflcvsd.c(88) : error C2073: 'month_letters' : cannot initialize array in function
+
+Root cause ===> Microsoft C 5.0 can not handle to declare local array variable with 
+vale initiallization in the same time like below
+
+        month_letters [4] = "???",      /*  3 characters of month            */
+
+Solutions ===>
+
+1) Discard vale initiallization. (After I review whole source code, string 'month_letters'
+does not need vale initiallization.)
+
+From ---
+    char
+        date_digits   [9],              /*  8 digits of date                 */
+        month_letters [4] = "???",      /*  3 characters of month            */
+        ch;                                  /*  Next character in date           */
+To ---
+    char
+        date_digits   [9],              /*  8 digits of date                 */
+        month_letters [4],      /*  3 characters of month            */
+        ch;                                  /*  Next character in date           */
+
+
+2) separate local array variable declation and vale initiallization.
+
+From ---
+    char
+        date_digits   [9],              /*  8 digits of date                 */
+        month_letters [4] = "???",      /*  3 characters of month            */
+        ch;                                  /*  Next character in date           */
+To ---
+    char
+        date_digits   [9],              /*  8 digits of date                 */
+        month_letters [4],      /*  3 characters of month            */
+        ch;                                  /*  Next character in date           */
+        strcpy(month_letters, "???");
+
+
+3) change local array variable to static array variable
+
+From ---
+    char
+        date_digits   [9],              /*  8 digits of date                 */
+        month_letters [4] = "???",      /*  3 characters of month            */
+        ch;                                  /*  Next character in date           */
+To ---
+    char
+        date_digits   [9],              /*  8 digits of date                 */
+        ch;                                  /*  Next character in date           */
+    static char month_letters [4] = "???";      /*  3 characters of month            */
+
+

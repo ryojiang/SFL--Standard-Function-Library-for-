@@ -1,0 +1,52 @@
+
+Microsoft (R) Program Maintenance Utility  Version 4.06
+Copyright (C) Microsoft Corp 1984-1987.  All rights reserved.
+
+
+  \msc50\bin\cl /FPi /O /Ol /W1 /AS /I\msc50\include teststr.c LIBSFL.LIB
+teststr.c
+teststr.c(53) : warning C4047: '=' : different levels of indirection
+teststr.c(56) : warning C4047: '=' : different levels of indirection
+
+Microsoft (R) Overlay Linker  Version 3.61
+Copyright (C) Microsoft Corp 1983-1987.  All rights reserved.
+
+Object Modules [.OBJ]: TESTSTR.OBJ 
+Run File [TESTSTR.EXE]: TESTSTR.EXE /NOI
+List File [NUL.MAP]: NUL
+Libraries [.LIB]: LIBSFL.LIB +
+Libraries [.LIB]: ;
+
+LINK : error L2029: Unresolved externals:
+
+
+
+_str2descr in file(s):
+ TESTSTR.OBJ(teststr.c)
+_descr2str in file(s):
+ TESTSTR.OBJ(teststr.c)
+
+There were 2 errors detected
+
+Root cause ===> 2 function names are typo in teststr.c
+Solution ===> 
+1) modify line 36 and 37 : str2descr --> strt2descr
+2) modify line 40 : descr2str --> descr2strt
+
+From ---
+Line
+36    puts ("Testing str2descr():");
+37    descr     = str2descr (table);
+38    printf ("Descriptor size=%d\n", descr-> size);
+39
+40    new_table = descr2str (descr);
+41    printf ("Contents of table: ");
+
+To ---
+Line
+36    puts ("Testing strt2descr():");
+37    descr     = strt2descr (table);
+38    printf ("Descriptor size=%d\n", descr-> size);
+39
+40    new_table = descr2strt (descr);
+41    printf ("Contents of table: ");

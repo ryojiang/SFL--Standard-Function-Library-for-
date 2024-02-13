@@ -1,0 +1,43 @@
+	\qc2\bin\qcl /c /AS testbits.c
+testbits.c
+	\qc2\bin\link testbits.obj,,,LIBSFL.LIB;
+
+Microsoft (R) QuickC Linker  Version 4.07
+Copyright (C) Microsoft Corp 1989.  All rights reserved.
+
+	\qc2\bin\qcl /AS testcgi.c LIBSFL.LIB
+testcgi.c
+
+Microsoft (R) QuickC Linker  Version 4.07
+Copyright (C) Microsoft Corp 1989.  All rights reserved.
+
+Object Modules [.OBJ]: TESTCGI.OBJ 
+Run File [TESTCGI.EXE]: TESTCGI.EXE /NOI
+List File [NUL.MAP]: NUL
+Libraries [.LIB]: LIBSFL.LIB 
+	\qc2\bin\qcl /AS testcomp.c LIBSFL.LIB
+testcomp.c
+testcomp.c(89) : warning C4061: long/short mismatch in argument : conversion supplied
+testcomp.c(125) : warning C4061: long/short mismatch in argument : conversion supplied
+
+Microsoft (R) QuickC Linker  Version 4.07
+Copyright (C) Microsoft Corp 1989.  All rights reserved.
+
+Object Modules [.OBJ]: TESTCOMP.OBJ 
+Run File [TESTCOMP.EXE]: TESTCOMP.EXE /NOI
+List File [NUL.MAP]: NUL
+Libraries [.LIB]: LIBSFL.LIB 
+	\qc2\bin\qcl /AS testconv.c LIBSFL.LIB
+testconv.c
+
+Microsoft (R) QuickC Linker  Version 4.07
+Copyright (C) Microsoft Corp 1989.  All rights reserved.
+
+Object Modules [.OBJ]: TESTCONV.OBJ 
+Run File [TESTCONV.EXE]: TESTCONV.EXE /NOI
+List File [NUL.MAP]: NUL
+Libraries [.LIB]: LIBSFL.LIB 
+	\qc2\bin\qcl /c /AS testcryp.c
+testcryp.c
+testcryp.c(49) : warning C4061: long/short mismatch in argument : conversion supplied
+testcryp.c(64) : error C2065: 'CLOCKS_PER_SEC' : undefined

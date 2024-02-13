@@ -1,0 +1,65 @@
+  \msc50\bin\cl /FPi /O /Ol /W1 /AS /I\msc50\include testmime.c LIBSFL.LIB 
+testmime.c
+
+Microsoft (R) Overlay Linker  Version 3.61
+Copyright (C) Microsoft Corp 1983-1987.  All rights reserved.
+
+Object Modules [.OBJ]: TESTMIME.OBJ 
+Run File [TESTMIME.EXE]: TESTMIME.EXE /NOI
+List File [NUL.MAP]: NUL
+Libraries [.LIB]: LIBSFL.LIB +
+Libraries [.LIB]: ;
+
+  \msc50\bin\cl /FPi /O /Ol /W1 /AS /I\msc50\include teststr.c LIBSFL.LIB
+teststr.c
+teststr.c(22) : error C2073: 'table' : cannot initialize array in function
+
+Root cause ===> Microsoft C 5.0 can not handle to declare local array variable with 
+vale initiallization in the same time like below. but QuickC 2.01 can.
+
+      char *table [10] = { "One", "Two", "Three", "Four", "Five",
+                       "Six", "Seven", "Eight", "Nine", NULL },
+
+Solution ===> Rewrite String array define and initiallization as below
+1) separate local array variable declation and vale initiallization.
+From ---
+    char
+        dest [128],
+        *table [10] = { "One", "Two", "Three", "Four", "Five",
+                       "Six", "Seven", "Eight", "Nine", NULL },
+        **new_table;
+
+To ---
+    char
+        dest [128],
+        *table [10],
+        **new_table;
+	
+	table [0] = "One";
+	table [1] = "Two";
+	table [2] = "Three";
+	table [3] = "Four";
+	table [4] = "Five";
+	table [5] = "Six";
+	table [6] = "Seven";
+	table [7] = "Eight";
+	table [8] = "Nine";
+	table [9] = NULL;
+
+
+2) change local array variable to static array variable
+From ---
+    char
+        dest [128],
+        *table [10] = { "One", "Two", "Three", "Four", "Five",
+                       "Six", "Seven", "Eight", "Nine", NULL },
+        **new_table;
+
+To ---
+    char
+        dest [128],
+        **new_table;
+    char static
+        *table [10] = { "One", "Two", "Three", "Four", "Five",
+                       "Six", "Seven", "Eight", "Nine", NULL },
+

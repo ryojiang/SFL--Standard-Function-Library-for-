@@ -1,0 +1,25 @@
+  \msc50\bin\cl /FPi /O /Ol /W1 /AS /I\msc50\include testdes.c LIBSFL.LIB
+testdes.c
+
+Microsoft (R) Overlay Linker  Version 3.61
+Copyright (C) Microsoft Corp 1983-1987.  All rights reserved.
+
+Object Modules [.OBJ]: TESTDES.OBJ 
+Run File [TESTDES.EXE]: TESTDES.EXE /NOI
+List File [NUL.MAP]: NUL
+Libraries [.LIB]: LIBSFL.LIB +
+Libraries [.LIB]: ;
+
+LINK : error L2029: Unresolved externals:
+
+
+
+_crypt_encode in file(s):
+ TESTDES.OBJ(testdes.c)
+
+There was 1 error detected
+
+Root cause ===> testdes.c is the Test program for DES encryption functions, but
+'sflcryp.c' has issue during MSC50 copiling, and been blocked by me.
+Therefore, 'LIBSFL.LIB' does not include 'sflcryp.obj' cause this error 
+Solution ===> Block 'testdes.c' too

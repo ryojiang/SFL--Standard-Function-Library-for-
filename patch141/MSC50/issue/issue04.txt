@@ -1,0 +1,14 @@
+Microsoft (R) Program Maintenance Utility  Version 4.06
+Copyright (C) Microsoft Corp 1984-1987.  All rights reserved.
+
+
+  \msc50\bin\cl /FPi /O /Ol /W1 /AS /I\msc50\include testbits.c LIBSFL.LIB
+testbits.c
+testbits.c(56) : error C2065: 'EXIT_SUCCESS' : undefined
+
+Root cause ===> MSC 5.0 <STDLIB.H> does not define 'EXIT_SUCCESS'
+Solution ===>
+Adding below definitions to \include\STDLIB.H 
+
+#define EXIT_SUCCESS	0
+#define EXIT_FAILURE	1

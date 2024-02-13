@@ -1,0 +1,77 @@
+  \msc50\bin\cl /c /FPi /O /Ol /W1 /AS /I\msc50\include sflcryp.c
+sflcryp.c
+sflcryp.c(564) : error C2177: constant too big
+sflcryp.c(565) : error C2177: constant too big
+sflcryp.c(567) : error C2177: constant too big
+sflcryp.c(568) : error C2177: constant too big
+sflcryp.c(570) : error C2177: constant too big
+sflcryp.c(571) : error C2177: constant too big
+sflcryp.c(573) : error C2177: constant too big
+sflcryp.c(574) : error C2177: constant too big
+sflcryp.c(575) : error C2177: constant too big
+sflcryp.c(577) : error C2177: constant too big
+sflcryp.c(578) : error C2177: constant too big
+sflcryp.c(586) : error C2177: constant too big
+sflcryp.c(587) : error C2177: constant too big
+sflcryp.c(589) : error C2177: constant too big
+sflcryp.c(590) : error C2177: constant too big
+sflcryp.c(592) : error C2177: constant too big
+sflcryp.c(593) : error C2177: constant too big
+sflcryp.c(595) : error C2177: constant too big
+sflcryp.c(596) : error C2177: constant too big
+sflcryp.c(598) : error C2177: constant too big
+sflcryp.c(599) : error C2177: constant too big
+sflcryp.c(601) : error C2177: constant too big
+sflcryp.c(608) : error C2177: constant too big
+sflcryp.c(609) : error C2177: constant too big
+sflcryp.c(611) : error C2177: constant too big
+sflcryp.c(612) : error C2177: constant too big
+sflcryp.c(614) : error C2177: constant too big
+sflcryp.c(615) : error C2177: constant too big
+sflcryp.c(617) : error C2177: constant too big
+sflcryp.c(618) : error C2177: constant too big
+sflcryp.c(620) : error C2177: constant too big
+sflcryp.c(621) : error C2177: constant too big
+sflcryp.c(623) : error C2177: constant too big
+sflcryp.c(630) : error C2177: constant too big
+sflcryp.c(632) : error C2177: constant too big
+sflcryp.c(633) : error C2177: constant too big
+sflcryp.c(635) : error C2177: constant too big
+sflcryp.c(636) : error C2177: constant too big
+sflcryp.c(637) : error C2177: constant too big
+sflcryp.c(639) : error C2177: constant too big
+sflcryp.c(640) : error C2177: constant too big
+sflcryp.c(642) : error C2177: constant too big
+sflcryp.c(643) : error C2177: constant too big
+sflcryp.c(645) : error C2177: constant too big
+
+Root cause ===>  Base on MSC 50 user guide that error C2177 indicates
+"constant too big. Information was lost because a constant value was too large
+to be represented in the type to which it was assigned"
+Microsoft C 5.0 and QuickC 2.01 not able to handle sush as below macro definitions
+/*  Round 1  */
+#   define S11 7
+#   define S12 12
+#   define S13 17
+#   define S14 22
+    FF (a, b, c, d, in [0] , S11, 3614090360UL);   /* 1                      */
+    FF (d, a, b, c, in [1] , S12, 3905402710UL);   /* 2                      */
+    FF (c, d, a, b, in [2] , S13, 606105819UL);    /* 3                      */
+    FF (b, c, d, a, in [3] , S14, 3250441966UL);   /* 4                      */
+    FF (a, b, c, d, in [4] , S11, 4118548399UL);   /* 5                      */
+    FF (d, a, b, c, in [5] , S12, 1200080426UL);   /* 6                      */
+    FF (c, d, a, b, in [6] , S13, 2821735955UL);   /* 7                      */
+    FF (b, c, d, a, in [7] , S14, 4249261313UL);   /* 8                      */
+    FF (a, b, c, d, in [8] , S11, 1770035416UL);   /* 9                      */
+    FF (d, a, b, c, in [9] , S12, 2336552879UL);   /* 10                     */
+    FF (c, d, a, b, in [10], S13, 4294925233UL);   /* 11                     */
+    FF (b, c, d, a, in [11], S14, 2304563134UL);   /* 12                     */
+    FF (a, b, c, d, in [12], S11, 1804603682UL);   /* 13                     */
+    FF (d, a, b, c, in [13], S12, 4254626195UL);   /* 14                     */
+    FF (c, d, a, b, in [14], S13, 2792965006UL);   /* 15                     */
+    FF (b, c, d, a, in [15], S14, 1236535329UL);   /* 16                     */
+
+Solution ===> No way to solve it; therefore, 
+give up all encrypt funtions using Microsoft C 5.0 and QuickC 2.01
+Need to remove all encrypt related programs, e.g. 'sflcryp' 'testcryp' 'testdes'
+with sub file name .h .obj .c from makefile before compiling files
